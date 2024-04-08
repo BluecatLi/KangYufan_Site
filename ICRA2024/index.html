@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Event-based object tracker</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content=""> 
+  <meta name="author" content="Xinrui Tao"> 
+  <!-- Le styles --> 
+  <link href="css/bootstrap2.min.css" rel="stylesheet"> 
+  <link href="css/style-oct23.css" rel="stylesheet"> 
+  <link href="css/main.css" rel="stylesheet"> 
+  <!-- Le scripts --> 
+  <script src="js/jquery.min.js"></script> 
+ </head> 
+ <body style="text-align: justify;"> 
+  <div id="fullBody"> 
+   <div class="container" id="inner"> 
+    <!--  header --> 
+    <div class="row mt-5"> 
+     <div class="col-xs-6 col-sm-3"> 
+      <a class="thumbnail profilePicture"> <img src="images/objects.jpg"  /> </a> 
+     </div> 
+     <div class="col-xs-12 col-sm-9"> 
+      <h1>Event-based object tracking</h1> 
+      <p> </p>
+      <hr> 
+      <p></p> 
+      <p> A dataset for event-based object tracking.</p>
+
+     </div> 
+     <div class="col-xs-12" style="margin-top:20px"> 
+      
+      <div style="margin-bottom:2px">
+      <!-- <img class="sidebarimg" src="images/LOVE.png"> I have been a single dog since birth. If you <strong>(limited gender to female) </strong> are interested in me, please contact me through any of the contact methods above.</div>  -->
+      <br/>
+
+      <hr> 
+     </div> 
+    </div> 
+    
+
+
+</div>
+
+    <h2>Paper</h2>  <br>
+    <div id="papersContainer" class="papers-container">
+      [ICRA'24] Yufan Kang, Guillaume Caron, Ryoichi Ishikawa, Adrien Escande, Kevin Chappellet, Ryusuke Sagawa, Takeshi Oishi. <a href="https://www.cvl.iis.u-tokyo.ac.jp/~kyf/ICRA2024/BIAM.pdf">Direct 3D model-based object tracking with event camera by motion interpolation</a>. IEEE International Conference on Robotics and Automation (ICRA), 2024.
+    </div>
+
+    <h2>Video</h2>  <br>
+    <div>
+      <a href="https://www.cvl.iis.u-tokyo.ac.jp/~kyf/ICRA2024/BIAM.pdf">Video used at ICRA 2024</a>
+    </div>
+
+    <h2>Datasets</h2> 
+    <h3>Citation</h3>
+    <div>
+      If you use these data, please cite this publication as follows:
+    </div>
+    <h3>Description</h3>
+    <div>
+      This is the dataset used in the ICRA'24 paper "<i>Direct 3D model-based object tracking with event camera by motion interpolation</i>". The dataset consists of some trajectories of an event camera (stored as a rosbag) and corresponding 3D models in the form of point cloud. The dataset contains 4 different objects, <i>Cracker Box</i>, <i>Bleach Cleanser</i>, <i>Xbox Controller</i> and <i>Cup Noodles</i>. All trajectories were captured using a Prophesee Gen3.1 camera with a 8mm pinhole lens. The camera resolution is 640x480. The calibration data is provided as well. 
+    </div>
+    <div>
+      The rosbag files contain the events using /prophesee/camera/cd_events_buffer message types.
+    </div>
+    <h3>3D Models</h3>
+    <a href="https://www.cvl.iis.u-tokyo.ac.jp/~kyf/ICRA2024/Dataset/cracker_box.ply">Cracker Box</a> <br>
+    <a href="https://www.cvl.iis.u-tokyo.ac.jp/~kyf/ICRA2024/Dataset/bleach_cleanser.ply">Bleach Cleanser</a> <br>
+    <a href="https://www.cvl.iis.u-tokyo.ac.jp/~kyf/ICRA2024/Dataset/xbox_controller.ply">Xbox Controller</a> <br>
+    <a href="https://www.cvl.iis.u-tokyo.ac.jp/~kyf/ICRA2024/Dataset/cup_noodles.ply">Cup Noodles</a> <br>
+
+    <h3>Trajectories</h3>
+    <a href="https://www.cvl.iis.u-tokyo.ac.jp/~kyf/ICRA2024/Dataset/cracker_box_1.rosbag">Cracker Box Trajectory 1</a> <br>
+    <a href="https://www.cvl.iis.u-tokyo.ac.jp/~kyf/ICRA2024/Dataset/bleach_cleanser_1.rosbag">Bleach Cleanser Trajectory 1</a> <br>
+    <a href="https://www.cvl.iis.u-tokyo.ac.jp/~kyf/ICRA2024/Dataset/xbox_controller_1.rosbag">Xbox Controller Trajectory 1</a> <br>
+    <a href="https://www.cvl.iis.u-tokyo.ac.jp/~kyf/ICRA2024/Dataset/cup_noodles_1.rosbag">Cup Noodles Trajectory 1</a> <br>
+ </body>
+</html>
